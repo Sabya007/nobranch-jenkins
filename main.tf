@@ -1,4 +1,7 @@
-resource "aws_s3_bucket" "example" {
-  bucket = "2024qwertyiopnunu"
+resource "aws_instance" "dev" {
+  ami = var.ami
+  instance_type = var.instance_type
+  key_name = var.keyname
   
+
 }
